@@ -94,7 +94,7 @@ theme.addEventListener("click",(e)=>{
     let themes=theme.classList.toggle("themes");
 
     if(themes){
-       colors.style.cssText=`position:absolute;right:15%`
+       colors.style.cssText=`position:absolute;right:0%;top:15%`
     }
     else{
         colors.style.cssText=`position:absolute;right:-30%`
@@ -112,6 +112,9 @@ var clr_cng=document.getElementsByClassName("clr_cng");
 let dot=document.getElementsByClassName("dot");
 let line=document.getElementsByClassName("line");
 
+console.log(span);
+
+
 function color1(){
     navItems[1].style.color="rgb(255, 0, 0)"
     download_cv.style.backgroundColor="rgb(255,0,0)"
@@ -124,7 +127,7 @@ function color1(){
 
     line[0].style.cssText=`background-color:rgb(255,0,0)`
 
-    for(let i=0;i<17;i++){
+    for(let i=0;i<9;i++){
         span[i].style.color="rgb(255,0,0)"
     }
 }
@@ -141,7 +144,7 @@ function color2(){
 
     line[0].style.cssText=`background-color:rgb(30, 151, 46)`
 
-    for(let i=0;i<17;i++){
+    for(let i=0;i<9;i++){
         span[i].style.color="rgb(30, 151, 46)"
     }
 }
@@ -158,7 +161,7 @@ function color3(){
 
     line[0].style.cssText=`background-color:rgb(9, 151, 132)`
 
-    for(let i=0;i<17;i++){
+    for(let i=0;i<9;i++){
         span[i].style.color="rgb(9, 151, 132)"
     }
 }
@@ -175,7 +178,7 @@ function color4(){
 
     line[0].style.cssText=`background-color:rgb(190, 20, 134)`
 
-    for(let i=0;i<17;i++){
+    for(let i=0;i<9;i++){
         span[i].style.color="rgb(190, 20, 134)"
     }
 }

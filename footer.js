@@ -88,7 +88,7 @@ theme.addEventListener("click",(e)=>{
     let themes=theme.classList.toggle("themes");
 
     if(themes){
-       colors.style.cssText=`position:absolute;right:15%;`
+       colors.style.cssText=`position:absolute;right:0%;top:15%;`
     }
     else{
         colors.style.cssText=`position:absolute;right:-30%`
