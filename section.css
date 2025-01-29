@@ -135,6 +135,8 @@
         left:0%;
         transition: left 3s,top 3s;
         overflow-x: hidden;
+        padding-right:20px;
+        box-sizing: border-box;
     }
     #setting{
         /* border: 2px solid red; */
@@ -183,7 +185,7 @@
         padding:0px 20px;
     }
     #info div p{
-        margin: 20px 0px;
+        margin: 20px;
     }
 
     #info div button{
