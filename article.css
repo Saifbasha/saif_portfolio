@@ -1,0 +1,402 @@
+@media (min-width:768px) and (max-width:1600px) {
+    #sub-nav a:nth-child(2){
+        color: #f00;
+    }
+    article{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: 75%;
+        height: 100vh;
+        scrollbar-width:none;
+        background-color: rgb(0, 0, 0,0.1);
+        padding: 2rem;
+    
+        position: relative;
+        bottom: -100vh;
+        transition:transform 3s;
+        transform: translateY(-100vh);     
+    }
+    #setting{
+        height: 15vh;
+        width: 100%;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #setting>div+div{
+        display: flex;
+        flex-direction: column;
+    }
+    #setting>div+div button{
+        background:none;
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        /* border: 2px solid green; */
+        cursor: pointer;
+    }
+    #colors{
+        height: 10vh;
+        width: 18vw;
+        border: 1px solid #000;
+        position: absolute;
+        top: 01%;
+        right: -30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(0, 0, 0,0.8);
+        transition: all 3s;
+    
+    }
+    #colors div{
+        height: 50%;
+        width: 10%;
+        /* border: 2px solid red; */
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    #col1{
+        background-color: rgb(255,0,0);
+    }
+    #col2{
+        background-color: rgb(30, 151, 46);
+    }
+    #col3{
+        background-color: rgb(9, 151, 132);
+    }
+    #col4{
+        background-color: rgb(190, 20, 134);
+    }
+    #setting>div>h1{
+        font-size: 35px;
+        font-style: italic;
+        color: #f00;
+        text-shadow: 2px 2px 2px #000;
+        filter: drop-shadow(2px 2px 2px #00f);
+        animation: text 4s linear infinite;
+    }
+    @keyframes text {
+        0%,100%{
+            filter: drop-shadow(2px 2px 2px #00f);
+        }
+        25%{
+            filter: drop-shadow(2px 2px 2px #0f0);
+        }
+        50%{
+            filter: drop-shadow(2px 2px 2px #f00);
+        }
+        75%{
+            filter: drop-shadow(2px 2px 2px #ff0);
+        }
+    }
+    #intro{
+        /* border: 2px solid green; */
+        height: 28vh;
+        /* padding: 2rem; */
+    }
+    #intro span{
+        color: #f00;
+    }
+    #intro>p{
+        margin-top: 20px;
+        font-size: 17px;
+    }
+    #details{
+        display: flex;
+        justify-content: space-between;
+    }
+    .table{
+        width: 30%;
+    }
+    .row{
+        display: flex;
+        padding: 0.5rem;
+        border-bottom: 1px solid rgb(0, 0, 0,0.5);
+    }
+    .col1{
+        /* border: 1px solid red; */
+        height: 1.5rem;
+        width: 10rem;
+    }
+    a{
+        text-decoration: none;
+        color: #00f;
+    }
+    #download_cv{
+        font-size: 18px;
+        padding: 10px 60px;
+        background-color: #f00;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px #000;
+        margin-top: 3rem;
+        cursor: pointer;
+    }
+    #academics{
+        height: auto;
+        width: 100%;
+        /* border: 2px solid #000; */
+        background-color: #fff;
+        margin-top: 3rem;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        position: relative;
+    }
+    .line{
+        height: 95%;
+        width: .15rem;
+        background-color:#f00;
+        /* margin:2.5rem 0 0 3rem; */
+        position: absolute;
+        left:5.7%;
+    }
+    .info{
+        height: 90%;
+        width: 90%;
+        /* border: 2px solid #000; */
+    }
+    .degree{
+        /* border: 2px solid #000; */
+        display: flex;
+        padding: 1.5em 0em;
+    }
+    .dot{
+        height: 1em ;
+        width: 1em;
+        background-color: #f00;
+        border-radius: 50%;
+    }
+    .dot+div{
+        margin-left: 3em;
+    }
+    .dot+div span{
+        font-size: 18px;
+    }
+    #skills{
+        height: auto;
+        width: 100%;
+        margin-top: 3em;
+        background-color: #fff;
+        padding: 2em 0 0 2em;
+    }
+    #skills h1{
+        font-style: italic;
+        color: #f00;
+    }
+    #skills div{
+        /* border: 2px solid red; */
+        padding: 1em 0em;
+    }
+    #skills div ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #skills div ul li{
+        margin-left: 5em;
+    }
+    #academics span{
+        color: #f00;
+    }
+    
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    #sub-nav a:nth-child(2){
+        color: #f00;
+    }
+    article{
+        overflow-y: scroll;
+        overflow-x:hidden;
+        width: 100%;
+        height: 100vh;
+        scrollbar-width:none;
+        background-color: rgb(0, 0, 0,0.1);  
+        position: absolute;
+        top: 0%;
+        left:0%;
+        transition: left 3s,top 3s;       
+    }
+    #setting{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
+        padding-left: 25%;
+    }
+    #setting div+div{
+        display: flex;
+        flex-direction: column;
+    }
+    #setting>div>h1{
+        font-size: 35px;
+        font-style: italic;
+        color: #f00;
+        text-shadow: 2px 2px 2px #000;
+        filter: drop-shadow(2px 2px 2px #00f);
+        animation: text 4s linear infinite;
+    }
+    @keyframes text {
+        0%,100%{
+            filter: drop-shadow(2px 2px 2px #00f);
+        }
+        25%{
+            filter: drop-shadow(2px 2px 2px #0f0);
+        }
+        50%{
+            filter: drop-shadow(2px 2px 2px #f00);
+        }
+        75%{
+            filter: drop-shadow(2px 2px 2px #ff0);
+        }
+    }
+
+    #setting>div+div button{
+        background:none;
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        /* border: 2px solid green; */
+        cursor: pointer;
+    }
+    #colors{
+        height: 10vh;
+        width: 18vw;
+        border: 1px solid #000;
+        position: absolute;
+        top: 01%;
+        right: -30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(0, 0, 0,0.8);
+        transition: all 3s;
+    
+    }
+    #colors div{
+        height: 50%;
+        width: 10%;
+        /* border: 2px solid red; */
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    #col1{
+        background-color: rgb(255,0,0);
+    }
+    #col2{
+        background-color: rgb(30, 151, 46);
+    }
+    #col3{
+        background-color: rgb(9, 151, 132);
+    }
+    #col4{
+        background-color: rgb(190, 20, 134);
+    }
+
+    #intro{
+        /* border: 2px solid green; */
+        height: auto;
+        padding-left: 10px;
+    }
+    #intro span{
+        color: #f00;
+    }
+    #intro>p{
+        font-size: 17px;
+    }
+    .table{
+        height: auto;
+    }
+    .table1{
+        height: auto;
+    }
+    .row{
+        display: flex;
+        padding: 0.5rem;
+        border-bottom: 1px solid rgb(0, 0, 0,0.5);
+    }
+    .col1{
+        /* border: 1px solid red; */
+        height: auto;
+        width: 10rem;
+    }
+    .col2{
+        align-content: center;
+    }
+    a{
+        text-decoration: none;
+        color: #00f;
+        text-align: center;
+    }
+    #download_cv{
+        font-size: 18px;
+        padding: 10px 60px;
+        background-color: #f00;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px #000;
+        margin-top: 3rem;
+        cursor: pointer;
+    }
+    #skills{
+        height: auto;
+        width: 80%;
+        margin: 2em;
+        background-color: #fff;
+        padding: 2em 0 0 2em;
+    }
+    #skills h1{
+        font-style: italic;
+        color: #f00;
+    }
+    #skills div{
+        /* border: 2px solid red; */
+        padding: 1em 0em;
+    }
+    #skills div ul li{
+        margin-left: 5em;
+    }
+    #academics{
+        height: auto;
+        width: 90%;
+        /* border: 2px solid #000; */
+        background-color: #fff;
+        margin: 1.5rem;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        position: relative;
+    }
+    /* .line{
+        height: 95%;
+        width: .15rem;
+        background-color:#f00;
+        position: absolute;
+        left:5%;
+    } */
+    .degree{
+        border-bottom: 1px solid #000;
+        display: flex;
+        padding: 1.5em 0em;
+
+    }
+    .dot{
+        height: 1em ;
+        width: 1em;
+        background-color: #f00;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+    .dot+div{
+        margin-left: 3em;
+    }
+    .dot+div span{
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,261 @@
+@media (min-width:768px) and (max-width:1600px) {
+    #sub-nav a:nth-child(4){
+        color: #f00;
+    }
+    footer{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: 75%;
+        height: 100vh;
+        scrollbar-width:none;
+        background-color: rgb(0, 0, 0,0.1);
+        padding: 2rem;
+    
+        position: relative;
+        bottom: -100vh;
+        transition:transform 3s;
+        transform: translateY(-100vh);     
+    }
+    #setting{
+        height: 15vh;
+        width: 100%;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #setting>div+div{
+        display: flex;
+        flex-direction: column;
+    }
+    #setting>div+div button{
+        background:none;
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        /* border: 2px solid green; */
+        cursor: pointer;
+    }
+    #colors{
+        height: 10vh;
+        width: 18vw;
+        border: 1px solid #000;
+        position: absolute;
+        top: 0%;
+        right:-30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(0, 0, 0,0.8);
+        transition: all 3s;
+    
+    }
+    #colors div{
+        height: 50%;
+        width: 10%;
+        /* border: 2px solid red; */
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    #col1{
+        background-color: rgb(255,0,0);
+    }
+    #col2{
+        background-color: rgb(30, 151, 46);
+    }
+    #col3{
+        background-color: rgb(9, 151, 132);
+    }
+    #col4{
+        background-color: rgb(190, 20, 134);
+    }
+    #setting>div>h1{
+        font-size: 35px;
+        font-style: italic;
+        color: #f00;
+        text-shadow: 2px 2px 2px #000;
+        filter: drop-shadow(2px 2px 2px #00f);
+        animation: text 4s linear infinite;
+    }
+    @keyframes text {
+        0%,100%{
+            filter: drop-shadow(2px 2px 2px #00f);
+        }
+        25%{
+            filter: drop-shadow(2px 2px 2px #0f0);
+        }
+        50%{
+            filter: drop-shadow(2px 2px 2px #f00);
+        }
+        75%{
+            filter: drop-shadow(2px 2px 2px #ff0);
+        }
+    }
+    
+    #ques{
+        /* border: 2px solid Red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+    #ques>h1{
+        color: #f00;
+    }
+    #contacts{
+        /* border: 2px solid #000; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #contacts div{
+        /* border: 1px solid #000; */
+        height: 30vh;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 2px 2px #000;
+        background-color: rgb(255,255,255,0.7);
+    }
+    #contacts div h3,#contacts div h3 a{
+        color: #f00;
+    }
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    #sub-nav a:nth-child(4){
+        color: #f00;
+    }
+    footer{
+         width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0,0.1);
+        position: absolute;
+        top: 0%;
+        left:0%;
+        transition: left 3s,top 3s;
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+    #setting{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       width: 80%;
+       margin-left: 20%;
+       /* border: 2px solid red; */
+    }
+    #setting div+div{
+        display: flex;
+        flex-direction: column;
+    }
+    #setting button{
+        padding: 5px 30px;
+        margin-top: 15px;
+        border: none;
+        background: none;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    #setting div h1{
+        font-size: 35px;
+        font-style: italic;
+        color: #f00;
+        text-shadow: 2px 2px 2px #000;
+        filter: drop-shadow(2px 2px 2px #00f);
+        animation: text 4s linear infinite;
+    }
+    @keyframes text {
+        0%,100%{
+            filter: drop-shadow(2px 2px 2px #00f);
+        }
+        25%{
+            filter: drop-shadow(2px 2px 2px #0f0);
+        }
+        50%{
+            filter: drop-shadow(2px 2px 2px #f00);
+        }
+        75%{
+            filter: drop-shadow(2px 2px 2px #ff0);
+        }
+    }
+    #colors{
+        height: 10vh;
+        width: 18vw;
+        border: 1px solid #000;
+        position: absolute;
+        top: 01%;
+        right: -30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(0, 0, 0,0.8);
+        transition: all 3s;
+    
+    }
+    #colors div{
+        height: 50%;
+        width: 10%;
+        /* border: 2px solid red; */
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    #col1{
+        background-color: rgb(255,0,0);
+    }
+    #col2{
+        background-color: rgb(30, 151, 46);
+    }
+    #col3{
+        background-color: rgb(9, 151, 132);
+    }
+    #col4{
+        background-color: rgb(190, 20, 134);
+    }
+    #ques{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #ques h1{
+        color: #f00;
+    }
+    #contacts{
+        /* border: 2px solid #000; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #contacts div{
+        /* border: 1px solid #000; */
+        height: 40vh;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 2px 2px #000;
+        background-color: rgb(255,255,255,0.7);
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    #contacts div h3,#contacts div h3 a{
+        color: #f00;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    #contacts{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #contacts div{
+        width: 100%;
+        margin-top: 20px;
+    }
+}

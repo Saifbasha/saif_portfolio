@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saif's Portfolio</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./nav.css" />
+    <link rel="stylesheet" href="./article.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <button id="navbar"><i class="fa-solid fa-bars"></i></button>
+      <nav>
+        <div id="sub-nav">
+          <a href="./index.html"><i class="fa-solid fa-house"></i>Home</a>
+          <a href=""><i class="fa-solid fa-user"></i>About</a>
+          <a href="./service.html"><i class="fa-solid fa-server"></i>Services</a>
+          <a href="./contact.html"><i class="fa-solid fa-message"></i>Contact</a>
+        </div>
+      </nav>
+      <article>
+        <div id="setting">
+          <div>
+            <h1 class="clr_cng">About Me</h1>
+          </div>
+          <div>
+            <button title="Theme" id="theme">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <button title="night-mode" id="mode">
+              <i class="fa-solid fa-moon"></i>
+            </button>
+            <div id="colors">
+              <div id="col1"></div>
+              <div id="col2"></div>
+              <div id="col3"></div>
+              <div id="col4"></div>
+            </div>
+          </div>
+        </div>
+        <div id="intro">
+          <h1>I'm Saif Basha and <span>Web Developer</span></h1>
+          <p>
+            I am Saif Basha, a highly motivated and results-oriented <span>Full-Stack
+            Developer </span> a <span>Master's degree in Computer Applications</span>. I possess
+            a strong foundation in <span>Java</span>,<span> JavaScript</span>, and related technologies,
+            and I am passionate about building user-friendly and high-performing
+            web applications. I am a quick learner, a strong team player, and I
+            am eager to contribute to innovative and challenging projects
+          </p>
+        </div>
+        <div id="details">
+            <div class="table">
+                <div class="row">
+                    <div class="col1"><h3>Date of birth:</h3></div>
+                    <div class="col2"><p>18-05-2002</p></div>
+                </div>
+                <div class="row">
+                    <div class="col1"><h3>Degree:</h3></div>
+                    <div class="col2"><p>M.C.A</p></div>
+                </div>
+                <div class="row">
+                    <div class="col1"><h3>Year of passout:</h3></div>
+                    <div class="col2"><p>2024</p></div>
+                </div>
+                <div class="row">
+                    <div class="col1"><h3>City:</h3></div>
+                    <div class="col2"><p>Yemmiganur</p></div>
+                </div>
+            </div>
+            <div class="table1">
+                <div class="row">
+                    <div class="col1"><h3>Phone:</h3></div>
+                    <div class="col2"><p>+91 9052145796</p></div>
+                </div>
+                <div class="row">
+                    <div class="col1"><h3>Email:</h3></div>
+                    <div class="col2"><p>syedsaifbasha@gmail.com</p></div>
+                </div>
+                <div class="row">
+                    <div class="col1"><h3>Linked in:</h3></div>
+                    <div class="col2"><a href="https://www.linkedin.com/in/s-saif-basha-57414b29b/">www.linkedin.com/in/s-saif-basha-57414b29b</a></div>
+                </div>
+                <div class="row">
+                    <div class="col1"><h3>GitHub:</h3></div>
+                    <div class="col2"><a href="https://github.com/Saifbasha">https://github.com/Saifbasha</a></div>
+                </div>
+            </div>
+        </div>
+        <button id="download_cv" onclick="downloadFile()">Download CV</button>
+        <div id="skills">
+            <h1 class="clr_cng">Technical Skills</h1>
+            <div>
+                <h4>Languages:</h4>
+                <ul>
+                    <li>Java</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Libraries:</h4>
+                <ul>
+                    <li>JDBC</li>
+                    <li>Servlets</li>
+                    <li>JSP</li>
+                    <li>React js</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Frame Works:</h4>
+                <ul>
+                    <li>SpringBoot</li>
+                </ul>
+            </div>
+        </div>
+        <div id="academics">
+            <div class="line"></div>
+                <div class="info">
+                    <div class="degree">
+                        <div class="dot"></div>
+                        <div>
+                            <p><i class="fa-solid fa-calendar-days"></i>&nbsp;&nbsp;&nbsp;&nbsp;2022-2024</p><br>
+                            <h4>Master in Computer Application (M.C.A)</h4><br>
+                            <p>Rayalaseema University <br>
+                                Kurnool, Andhra Pradesh
+                            </p><br>
+                            <p><span>Percentage:</span> 76%</p>
+                        </div>
+                    </div>
+                    <div class="degree">
+                        <div class="dot"></div>
+                        <div>
+                            <p><i class="fa-solid fa-calendar-days"></i>&nbsp;&nbsp;&nbsp;&nbsp;2019-2022</p><br>
+                            <h4>Bachelors in Computer Science (M.P.Cs)</h4><br>
+                            <p>Rao's Degree College <br>
+                                Yemmiganur, Kurnool(d), Andhra Pradesh
+                            </p><br>
+                            <p><span>Percentage:</span> 80%</p>
+                        </div>
+                    </div>
+                    <div class="degree">
+                        <div class="dot"></div>
+                        <div>
+                            <p><i class="fa-solid fa-calendar-days"></i>&nbsp;&nbsp;&nbsp;&nbsp;2017-2019</p><br>
+                            <h4>Intermediate (M.P.C)</h4><br>
+                            <p>Deeksha Junior College <br>
+                                Yemmiganur, Kurnool(d), Andhra Pradesh
+                            </p><br>
+                            <p><span>Percentage:</span> 95.5%</p>
+                        </div>
+                    </div>
+                    <div class="degree">
+                        <div class="dot"></div>
+                        <div>
+                            <p><i class="fa-solid fa-calendar-days"></i>&nbsp;&nbsp;&nbsp;&nbsp;2017</p><br>
+                            <h4>SSC</h4><br>
+                            <p>Sree Saraswathi vidyanikethan <br>
+                                Yemmiganur, Kurnool(d), Andhra Pradesh
+                            </p><br>
+                            <p><span>Percentage:</span> 92%</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+      </article>
+    </main>
+
+    <script src="./about.js"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+@media (min-width:768px) and (max-width:1600px) {
+    #navbar{
+        display: none;
+    }
+    nav{
+        width: 25%;
+        height: 100%;
+        /* border: 2px solid blue; */
+        align-content: center;
+        background-color: #fff;       
+    
+        position: relative;
+        top: -100vh;
+        transition:transform 3s;    
+        transform: translateY(100vh);
+        display: block;
+    }
+    #sub-nav{
+        height: 50%;
+        width: 70%;
+        /* border: 2px solid green; */
+        margin: auto;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #sub-nav a{
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+    
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        border-bottom: 1px solid #000;
+        gap:10%;
+    }
+    #sub-nav a:hover{
+        border-bottom: 1px solid #00f;
+        color: #00f;
+    }
+    
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    #navbar{
+        display: block;
+        position:fixed;
+        top: 0%;
+        left: 0%;
+        font-size: 20px;
+        padding: 8px 25px;
+        z-index: 10;
+        background:rgb(0,0,0,0.5);
+        color: #f00;
+        border: 1px solid #000;
+        cursor: pointer;
+    }
+    nav{
+        width: 75%;
+        height: 100vh;
+        /* border: 2px solid blue; */
+        align-content: center;
+        background-color: rgb(255,255,255); 
+        border-right: 1px solid #000;
+
+        position: absolute;
+        top: 0%;
+        right: 100%;
+
+        transition: left 3s,right 3s;
+    }
+    #sub-nav{
+        height: 50%;
+        width: 70%;
+        /* border: 2px solid green; */
+        margin: auto;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #sub-nav a{
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+    
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        border-bottom: 1px solid #000;
+        gap:10%;
+    }
+    #sub-nav a:hover{
+        border-bottom: 1px solid #00f;
+        color: #00f;
+    }
+
+}
