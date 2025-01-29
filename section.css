@@ -183,6 +183,7 @@
         align-items: center;
         /* border: 2px solid #000; */
         padding:0px 20px;
+        box-sizing: border-box;
     }
     #info div p{
         margin: 20px;
